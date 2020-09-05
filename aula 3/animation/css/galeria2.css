@@ -1,0 +1,52 @@
+/*codigo de animação*/
+
+/*A palavra @keyframes indica que é uma animação*/
+@keyframes iresquerda{
+    /*Estado inicial*/
+    from{
+        margin-left: 600px;
+    }
+    /*Estado final*/
+    to{
+        margin-left: 5px;
+    }
+}
+
+h1{
+    /*define nome da animação que será usada*/
+    animation-name: iresquerda;
+    /*Define a duração da animação*/
+    animation-duration: 5s;
+}
+
+/*A palavra @keyframes indica que é uma animação*/
+@keyframes acelera{
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 1200px;
+    }
+}
+
+.carro{
+    width: 90px;
+    animation-name: acelera;
+    animation-duration: 3s;
+}
+
+#car1{
+    /*ele mantem a mesma velocidade*/
+    animation-timing-function: linear;
+    /*É como se invertesse o from e o to*/
+    animation-direction: reverse;
+}
+
+#car2{
+    /*começa lento, fica rápido, termina lento é o padrão*/
+    animation-timing-function: ease;
+    /*Quantas vezes ocorre a animação*/
+    animation-iteration-count: 2;
+    /*define a direção, no caso alterna entre normal e reverse*/
+    animation-direction: alternate;
+}

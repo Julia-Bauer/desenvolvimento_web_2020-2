@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Unidades de Medida</title>
+    <!--tag para o navegador renderizar corretamente-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida</title>
+    <style tipe="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-size: 18px;
+        }
+        #container{
+            background-color: lightgray;
+            width: 90%;
+            /*50% do espaço disponivel (altura) no navegador*/
+            height: 50vh;
+            font-size: 1.8em;
+        }
+        #carro{
+            /*tamanho da fonte é 20% do tamanho do elemento pai (container)*/
+            font-size: 0.2em;
+            background-color: lightblue;
+            width: 90%;
+        }
+        #volante{
+            /*60% maior em elação a fonte raiz*/
+            font-size: 1.6rem;
+            /*50% do espaço de largura disponível na tela*/
+            width: 50vw;
+            background-color: lightyellow;
+        }
+        #banco{
+            /*50% maior em relação a fonte herdada do elemento pai(carro)*/
+            font-size: 1.5em;
+            background-color: lightpink;
+            /*altura baseada na largura do navegador*/
+            height: 3vw;
+        }
+
+    </style>
 </head>
 <body>
     <div id="container">
     	<!--  -->
         Estou no container 
-        <div>
+        <div id="carro">
         	<!--  -->
-            Estou no filho do container 
-            <div>
+            Estou dentro do carro!
+            <div id="volante">
             	<!--  -->
-                Estou no neto do container 
+                Estou no volante!
             </div>
-            <div>
+            <div id="banco">
             	<!-- -->
-                Estou no neto do container 
+                Estou no neto banco!
             </div>
         </div>
     </div>
