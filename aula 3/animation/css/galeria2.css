@@ -50,3 +50,27 @@ h1{
     /*define a direção, no caso alterna entre normal e reverse*/
     animation-direction: alternate;
 }
+
+#car3{
+    /*começa lento e fica rápido*/
+    animation-timing-function: ease-in;
+    /*Quantas vezes ocorre a animação, no caso infinitas vezes*/
+    animation-iteration-count: infinite;
+    /*define a direção, executa a animação de final pro começo e depois ao contrário*/
+    animation-direction: alternate-reverse;
+}
+
+#ca4r{
+    /*começa rápido e fica lento*/
+    animation-timing-function: ease-out;
+}
+
+#car5{
+    /*começa e termina lento*/
+    animation-timing-function: ease-in-out;
+}
+
+#car6{
+    /*espera um segundo para começar a animação*/
+    animation-delay: 1s;
+}

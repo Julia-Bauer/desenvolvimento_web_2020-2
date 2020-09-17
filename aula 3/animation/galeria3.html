@@ -3,20 +3,51 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-	<title>Galeria</title>
+	<title>Caixinha</title>
+
+	<style type="text/css">
+		
+		@keyframes colorir{
+			/*tempo inicial da animação*/
+			0%{
+				margin: 0;
+			}
+			/*em 30% do tempo da animação*/
+			30%{
+				background-color: coral;
+				margin-left: 300px;
+				margin-top: 0;
+			}
+			/*em 60% da animação*/
+			60%{
+				background-color: cyan;
+				margin-left: 450px;
+				margin-top: 400px;
+			}
+			/*tempo final da animação*/
+			100%{
+				margin-left: 250px;
+				margin-top: 40px;
+			}
+		}
+
+		.box{
+			height: 100px;
+			width: 100px;
+			background-color: chartreuse;
+			margin: 0;
+
+			animation-name: colorir;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+	</style>
+
 </head>
 <body>
-	<div class="container">
-		<h1>Transformando minha frota</h1>
-		<section>
-			<img src="img/car1.png" id="car1" alt="Primeiro Carro">	
-			<img src="img/car2.png" id="car2" alt="Segundo Carro">	
-			<img src="img/car3.png" id="car3" alt="Terceiro Carro">	
-			<br><br><br><br>
-			<img src="img/car4.png" id="car4" alt="Quarto Carro">	
-			<img src="img/car5.png" id="car5" alt="Quinto Carro">	
-			<img src="img/car6.png" id="car6" alt="Sexto Carro">
-		</section>
+	<div class="box">
+	
 	</div>
 </body>
 </html>
