@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Media Query</title>
+    <style type="text/css">
+        body{
+            background-color: chartreuse;  
+        }
+
+        /*se a largura disponivel for no maximo 800px*/
+        /*ou seja menor que 800px*/
+        @media only screen and (max-width: 800px){
+            body{
+                background-color: coral;
+            }
+        }
+
+         /*se a largura disponivel for no maximo 600px*/
+        /*ou seja menor que 600px*/
+        @media only screen and (max-width: 600px){
+            body{
+                background-color: cyan;
+            }
+        }
+        /*a regra mais de baixo pode sobrescrever as outras, cuidado!*/
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
