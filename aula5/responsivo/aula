@@ -1,3 +1,47 @@
-Design responsivo é muito importante
+TECNOLOGIAS
+*media queries
+*flexbox
+*Displaygrid
 
-Viewport é o tamanho da janela em que o site está sendo renderizado
+--------------------------------------------------------------
+Porque um site responsivo?
+
+- pessoas acessam websites a partir de muitos dispositivos
+
+- tornar o site fácil de usar e agradávrel aos olhos independente do dispositivos
+
+-O design corresponde as especificações do dispositivo (incluindo ux)
+
+Design responsivo é muito importante, novos dispositivos surgindo, desktop não é mais o padrão. Se a interface não for amigável para dispositivos móveis o site pode perder muitos acessos.
+
+--------------------------------------------------------------**VIEWPORT**
+ é o tamanho da janela em que o site está sendo renderizado (mostrado)
+
+ **Meta tag** 
+ é uma forma de adicionar informações extra na página, como descrição, palavras-chave, etc.
+ Dentro da tag head. USAR SEMPRE
+
+ *****META Viewport vai ser sempre incluida quando quiser trabalhar com sites responsivos*****
+    - instrui o navegador como controlar o tamanho e o dimensionamento da página
+
+exemplo:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+-------------------------------------------------------------
+**MEDIA QUERIES** 
+(só funciona se tiver a tag meta viewport) é a utilização de Media Types com uma ou mais expressoes envolvendo caracteristicas de uma media para definir formatações para diversos dispositivos
+    - funciona como se fosse um if de uma linguagem de programação
+
+permite criar regras de css baseadas em diversos parametros(viewport, tipo de dispositivo, etc)
+
+O browser ou aplicação le as expressões definidas na query, caso o dispositivo se encaixe o css será aplicado
+
+exemplo:
+@media(**querry**){
+    /*CSS rules used when query matches*/
+}
+
+@media only screen and (max-width: 768px){
+    
+}
