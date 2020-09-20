@@ -181,3 +181,60 @@ footer a{
     text-decoration: none;
 }
 
+@media only screen and (max-width: 800px){
+    /*ajuste da galeria de imagens*/
+    #featured li{
+        width: 45%;
+    }
+}
+
+/*aplica caso largura disponivel seja no maximo 700px*/
+@media only screen and (max-width: 700px){
+    .wrapper{
+        width: 95%;
+        text-align: center;
+    }
+
+    header nav{
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 638px){
+    /*ajustes do menu*/
+    header nav{
+        clear:left;
+    }
+
+    header nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    h1.logo{
+        float: none;
+        margin: 10px auto 0;
+
+    }
+
+    header nav ul li{
+        margin: 5px 10px;
+    }
+
+    /*ajuste do cardapio*/
+    #home-menu ul li{
+        width:  98%;
+        margin: 3px 0;
+    }
+
+    #home-menu ul{
+        margin: 0 auto;
+    } 
+}
+
+@media only screen and (max-width: 480px){
+/*ajustar a galeria*/
+    #featured li{
+        width: 92%;
+    }
+}
