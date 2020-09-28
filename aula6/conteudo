@@ -1,0 +1,83 @@
+FLEXBOX
+
+materias de consulta:
+"A complete guide to flexbox" 
+"origamid"
+
+Flexbox nos permite os itens dentro de um cantainer.
+
+container flex - comportamento flex --> os filhos -itens- (não os filhos dos filhos) são aferados. 
+regra de css -- 
+
+-----------------------DISPLAY-----------------------
+
+*o display por padrão é block*
+display: flex (todos os itens -filhos diretos- por padrao do flex ficam em linha)
+
+-----------------------FLEX-DIRECTION----------------------
+
+flex direction --> indica a direção dos itens 
+    -row(padrao)
+    -row-reverse: inverso de row
+    -column: de cima para baixo
+    -column-reverse: inverso de column
+
+----------------------FLEX-WRAP----------------------
+
+Flex wrap
+    -nowrap (padrão) - todos os itens ficam em uma única linha
+    -wrap - os itens que não cabem em uma linha são jogados para baixo
+    -wrap-reverse - os itens que não cabem em uma linha são jogasdos para cima
+
+    *pode mudar a altura do container pq joga para baixo
+
+----------------------FLEX-FLOW----------------------
+
+Flex flow é um atalho para felx direction e flex wrap - ambos em uma única propriedade. Não é muito utilizado.
+exemplo:
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+----------------------JUSTIFY-CONTENT----------------------
+
+Alinha os itens flex no container de acordo com a direção. A propriedade só funciona se os itens atuais NÃO ocuparem todo o container.*exelente quando quer alinhar itens a esquera ou direita a exemplo de header com marca e navegação*
+    
+                       ****FLEX-START****
+    ---------------------------------------------------------
+    -                                                       -
+    -  *item1* *item2* *item3*                              -
+    -                                                       -
+    ---------------------------------------------------------
+    *Todos os itens ficam alinhados a esquerda, no começo da linha
+
+                        ****FLEX-END****
+    ---------------------------------------------------------
+    -                                                       -
+    -                              *item1* *item2* *item3*  -
+    -                                                       -
+    ---------------------------------------------------------
+    *Todos os itens ficam alinhados a direita, no final da linha
+
+                        ****CENTER****
+    ---------------------------------------------------------
+    -                                                       -
+    -                *item1* *item2* *item3*                -
+    -                                                       -
+    ---------------------------------------------------------
+    *Todos os itens ficam alinhados ao centro
+
+                     ****SPACE-BETWEEN****
+    ---------------------------------------------------------
+    -                                                       -
+    -*item1*                 *item2*                 *item3*-
+    -                                                       -
+    ---------------------------------------------------------
+    *Primeiro elemento sem espaçamento a esquerda(grudado a margem) e o último elemento grudado a margem direita. Os outros elementos ficam distribuidos com igual espaçamento entre os itens.
+----------------------FLEX-WRAP----------------------
+
+----------------------FLEX-WRAP----------------------
+
+
+
