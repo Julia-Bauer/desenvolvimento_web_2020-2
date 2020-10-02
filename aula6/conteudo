@@ -252,3 +252,60 @@ Align items alinha os flex items de acordo com o eixo do container. O alinhament
     alinha as linhas com distribuição igual no espaço disponivel ao redor delas
 
 
+--------------------------------------------------------------
+-------------PROPRIEDADES-PARA-ELEMENTOS-FILHO---------------
+    
+    ------------------------*ORDER*--------------------------
+    
+                                0
+    Por default aparecem os itens na ordem que foram anunciados no HTML e cada um tem valor '0'. 
+    
+                               -1
+    Definir como '-1' joga para a esquerda, 
+    
+                                1
+    como '1', '2' etc, para a direira, etc
+
+    -Com essa propriedade podemos personalizar a ordem dos itens 
+
+     ---------------------*FLEX-GROW*------------------------
+     
+                                0
+     Define a habilidade de um flex item de crescer. Por padrao o valor é '0', assim os flex itens
+     
+                                1
+     Ao definir '1' para todos os flex-itens, eles tentarão ter a mesma largura e vão ocupar 100% do container. caso um elemento tenho um conteúdo muito largo, sera respeitado (por isso tentarão)
+
+                                2
+     Considerando uma linha com 4 itens, onde 3 são flex grow 1 e um flex grow 2, o flex grow 2 tentará ocupar 2x mais espaço extra do que os outros elementos.
+
+     OBS: justify-content não funciona em itens com flex grow definido.
+
+     ---------------------*FLEX-BASIS*-----------------------
+
+     Indica o tamanho inicial do flex item antes da distribuição do espaço restante.
+
+     Quando definimos o flex grow 1 e possuimos auto no basis, o valor restante para ocupar o container é distribuido ao redor do conteúdo do flex item.
+            
+            -auto -- pega o mínimo de largura para cobrir o conteúdo que tem dentro deles. O que define a largura é o conteúdo dele.
+            
+            -0 -- pega uma lagura bem pequena e deixa igual este tamanho para todos, independente da quantidade de conteúdo. pode alterar a altura tambem. 
+    
+     --------------------*FLEX-SHRINK*-----------------------
+     
+     Define a capacidade de redução de tamanho do item.
+
+            1 -- reduz os itens para ficarem dentro do container (não estoura)
+
+            0 -- pega o valor o flex basis e não deixa ser menor do que aquilo
+     
+     ------------------------*FLEX*-------------------------
+     
+     reune as propriedade flex grow, flex shrink e flex basis(pode passar tres parametros). Primeiro parametro: flex grow, segundo: flex shrink, terceiro: flex basis     
+     
+     --------------------------------------------------------
+     
+     *ALIGN-SELF*
+
+
+
