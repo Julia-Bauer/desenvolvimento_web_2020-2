@@ -1,0 +1,25 @@
+/*configurações básicas*/
+/*zerar bordas e paddings para maior dominio sobre os elementos da minha pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color:#FFF; /*#ffffff*/
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    
+    /*otimiza renderização para leitura(mais pesado, mais qualidade)*/
+    text-rendering: optimizeLegibility;
+
+}
+
+.row{
+    /*Define a largura máxima das linhas 'rows'*/
+    max-width: 1140px;
+    /*define que o container fique centralizado*/
+    margin: 0 auto;
+}
