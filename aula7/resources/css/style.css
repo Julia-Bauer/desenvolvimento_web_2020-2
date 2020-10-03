@@ -27,4 +27,15 @@ html{
 header{
     /*define uma imagem de fundo*/
     background-image: url(../../vendors/css/img/hero-header.jpg);
+    /*faz imagem ficar o maior possível, cortando o mínimo possível*/
+    background-size: cover;
+    /*centraliza a imagem*/
+    background-position: center;
+    /*100% do viewport height*/
+    height: 100vh;
+}
+
+h1{
+    margin: 0;
+    color: white;
 }
