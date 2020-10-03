@@ -23,3 +23,8 @@ html{
     /*define que o container fique centralizado*/
     margin: 0 auto;
 }
+
+header{
+    /*define uma imagem de fundo*/
+    background-image: url(../../vendors/css/img/hero-header.jpg);
+}
