@@ -25,8 +25,11 @@ html{
 }
 
 header{
+    background-image: 
+    /*linear gradiente fica na frente pq é anunciado primeiro*/
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
     /*define uma imagem de fundo*/
-    background-image: url(../../vendors/css/img/hero-header.jpg);
+    url(../../vendors/css/img/hero-header.jpg);
     /*faz imagem ficar o maior possível, cortando o mínimo possível*/
     background-size: cover;
     /*centraliza a imagem*/
@@ -38,4 +41,57 @@ header{
 h1{
     margin: 0;
     color: white;
+    /*o tamanho padrao está definido no seletor como 20px*/
+    font-size: 240%;
+    /*deixa tudo em mausculo*/
+    text-transform: uppercase;
+    /*espaçamento entre as palavras*/
+    word-spacing: 4px;
+    /*espaçamento entre as letras*/
+    letter-spacing: 1px;
+
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #E67E22;
+    border-radius: 200px;
+    transition: 
+    background-color 0.2s,
+    border 0.2s,
+    color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #E67E22;
+    /*Espaçamento entre botões*/
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: #E67E22;
+    /*Espaçamento entre botões*/
+    margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #CF6D17;
+    border: 1px solid #CF6D17;
+    color: ]white;
 }
