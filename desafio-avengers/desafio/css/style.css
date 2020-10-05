@@ -42,7 +42,9 @@ img {
 }
 
 #logo-avengers{
-    width: 30vh;
+    width: 20vw;
+    min-width: 170px;
+    margin: 10px;
 }
 
 .header {
@@ -90,16 +92,18 @@ img {
 
 .galeria {
     margin: 0 auto;
-    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .galeria > div {
     margin: 10px;
-    max-width: 350px;
+    flex-basis: 250px;
+    flex-grow: 1;
 }
-
 
 footer {
     background-color: #222;
