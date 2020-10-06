@@ -173,4 +173,7 @@ article{
 
 .vid{
     margin: 15px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
