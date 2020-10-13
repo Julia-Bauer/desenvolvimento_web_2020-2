@@ -1,0 +1,180 @@
+/*configurações básicas*/
+/*zerar bordas e paddings para maior dominio sobre os elementos da minha pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color:#FFF; /*#ffffff*/
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    
+    /*otimiza renderização para leitura(mais pesado, mais qualidade)*/
+    text-rendering: optimizeLegibility;
+
+}
+
+.row{
+    /*Define a largura máxima das linhas 'rows'*/
+    max-width: 1140px;
+    /*define que o container fique centralizado*/
+    margin: 0 auto;
+}
+
+header{
+    background-image: 
+    /*linear gradiente fica na frente pq é anunciado primeiro*/
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    /*define uma imagem de fundo*/
+    url(../../vendors/css/img/hero-header.jpg);
+    /*faz imagem ficar o maior possível, cortando o mínimo possível*/
+    background-size: cover;
+    /*centraliza a imagem*/
+    background-position: center;
+    /*100% do viewport height*/
+    height: 100vh;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1{
+    margin: 0;
+    color: white;
+    /*o tamanho padrao está definido no seletor como 20px*/
+    font-size: 240%;
+    /*deixa tudo em mausculo*/
+    text-transform: uppercase;
+    /*espaçamento entre as palavras*/
+    word-spacing: 4px;
+    /*espaçamento entre as letras*/
+    letter-spacing: 1px;
+    /*Dá um espaço entre a frase e os botões*/
+    margin-bottom: 20px;
+
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2::after{
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #E67E22;
+    margin: 0 auto; /*centraliza o elemento*/
+    margin-top: 30px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #E67E22;
+    border-radius: 200px;
+    transition: 
+    background-color 0.2s,
+    border 0.2s,
+    color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #E67E22;
+    /*Espaçamento entre botões*/
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: #E67E22;
+    /*Espaçamento entre botões*/
+    margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #CF6D17;
+    border: 1px solid #CF6D17;
+    color: white;
+}
+
+/*Definicoes do NAV*/
+
+.logo{
+    height: 100px;
+    float: left;
+    margin-top: 20px; /*colocar espacamento acima da logo*/
+}
+
+.main-nav{
+    float: right;
+    list-style: none; /*remove os marcadores da lista*/
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px; /*Espacamento entre items da lista*/
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding: 8px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    /*ao passar o mouse aparece uma borda inferior*/
+    border-bottom: 2px solid #E67E22;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+/*Definições de estilo na seção features*/
+
+ion-icon{
+    font-size: 350%;
+    display: block;
+    color: #E67E22;
+    margin-bottom: 10px;/*espaço entre o ícone e o título*/
+}
+
+section{
+    padding: 80px 0;
+}
